@@ -1,0 +1,7 @@
+<div class="form-group">
+  <label for="">
+  </label>
+  <select class="form-control" name="languageCombo" id="languageCombo" [(ngModel)]="selectedLanguage.code" (change)="selectLanguage()">
+    <option *ngFor="let language of languageArray" [value]="language.code">{{language.name}}</option>
+  </select>
+</div>
